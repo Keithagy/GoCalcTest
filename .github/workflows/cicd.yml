@@ -10,4 +10,3 @@ jobs:
     steps:
       - name: Checkout my codes
         uses: actions/checkout@v2
-        run: 
