@@ -23,7 +23,6 @@ jobs:
         - name: Install dependencies
           run: |
             go get github.com/tebeka/go2xunit
-            go test -v
         - if: ${{success()}}
           name: Install Goblin
           run: |
