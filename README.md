@@ -1,2 +1,2 @@
 # GoCalcTest
-Learning about Github Actions through a simple sample calculator actions.
+Learning about automated testing via Github Actions using a sample calculator application.
