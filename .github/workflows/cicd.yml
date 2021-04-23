@@ -8,12 +8,17 @@ jobs:
   build:
     runs-on: ubuntu-16.04
     steps:
-      - name: Checkout my codes
-        uses: actions/checkout@v2
-      - name: Setup Go
-        uses: actions/setup-go@v2
-        with:
+        - name: Checkout my codes
+          uses: actions/checkout@v2
+        - name: Setup Go
+          uses: actions/setup-go@v2
+          with:
             go-version: 1.15
-      - name: Check Go Version
-        run: |
+        - name: Check Go Version
+          run: |
             go version
+        - name: Install dependencies
+          run: |
+            go get github.com/tebeka/go2xunit
+            go get github.com/franela/goblin
+            go test -v
