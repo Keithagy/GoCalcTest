@@ -1,4 +1,2 @@
-# GoShoppingList
-Basic Shopping List CLI application written in Go.
-
-This is a simple change.
+# GoCalcTest
+Learning about Github Actions through a simple sample calculator actions.
